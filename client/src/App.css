@@ -1,39 +1,112 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Helvetica", sans-serif;
+  font-size: 16px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
-  }
-}
-
-.App-header {
-  min-height: 100vh;
+.container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  border: solid 1px #e0e0e0;
+  width: 22%;
+  height: 490px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  background: #eeeeee;
+  margin: 0 auto;
 }
 
-.App-link {
-  color: rgb(112, 76, 182);
+.image {
+  width: 60%;
+  height: 45%;
+  background-position-x: -1px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
 }
 
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px)
-  }
-  100% {
-    transform: translateY(0px)
-  }
+.card {
+  width: 100%;
+  padding: 20px;
+  line-height: 2;
+}
+
+.card span {
+  font-weight: bold;
+}
+
+.btns {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 25px;
+}
+
+.goBtn {
+  height: 30px;
+  width: 40px;
+  background: green;
+  color: white;
+  border: none;
+  font-weight: bolder;
+}
+
+.notBtn {
+  height: 30px;
+  width: 40px;
+  background: red;
+  color: white;
+  border: none;
+}
+
+:focus {
+  outline: 0;
+}
+
+.outside {
+  display: flex;
+  justify-content: space-between;
+  width: 18%;
+  margin: 0 auto;
+  margin-top: 5%;
+  padding-bottom: 15px;
+}
+
+.notGoingHeading,
+.goingHeading {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.containerBig {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.containerSmall {
+  width: 18%;
+  margin: 10px;
+}
+
+.userCard {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  border: solid 1px #e0e0e0;
+  justify-content: center;
+  align-items: center;
+  background: #eeeeee;
+}
+
+h1 {
+  font-size: 24px;
+  padding: 30px;
 }
